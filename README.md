@@ -1,22 +1,7 @@
-# nuxt-sample
+# nuxt-github-actions-sample
 
-> My riveting Nuxt.js project
+Sample of GitHub Actions for Nuxt.js
 
-## Build Setup
+## Configure of GitHub Actions.
 
-``` bash
-# install dependencies
-$ npm run install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+see [Configure of GitHub Actions](.github/workflows/nuxtjs.yml).
