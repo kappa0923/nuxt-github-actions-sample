@@ -14,9 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - uses: kappa0923/nuxtjs-generate-action@v0.1.0
-      - run: |
-          zip -r artifact.zip dist
       - uses: actions/upload-artifact@v1
         with:
-          path: artifact.zip
+          path: dist
           name: artifact.zip
