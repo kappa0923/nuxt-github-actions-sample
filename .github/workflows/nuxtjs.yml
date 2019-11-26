@@ -18,5 +18,5 @@ jobs:
           zip -r artifact.zip dist
       - uses: actions/upload-artifact@v1
         with:
-          path: ./
+          path: artifact.zip
           name: artifact.zip
