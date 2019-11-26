@@ -1,6 +1,6 @@
 name: GitHub Actions for Nuxt.js
 
-on: 
+on:
   push:
     branches: master
 
@@ -12,14 +12,5 @@ jobs:
       NODE_VERSION: 10.x
 
     steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js ${{ env.NODE_VERSION }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ env.NODE_VERSION }}
-    - name: npm install and lint
-      run: |
-        npm ci
-        npm run lint
-    - name: generate static web application.
-      run: npm run generate
+      - uses: actions/checkout@v1
+      - uses: kappa0923/nuxtjs-generate-action@master
